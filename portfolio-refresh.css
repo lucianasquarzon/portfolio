@@ -1,0 +1,68 @@
+/* September 2026: retain the editorial palette and give evidence priority. */
+.hero-context{display:block;font-size:16px;color:var(--muted);margin-top:18px;max-width:580px}
+.hero-bottom>.hero-index{order:1}
+.case-featured{background:var(--soft);border-top:3px solid var(--accent);padding:32px;margin-bottom:88px}
+.case-featured .case-heading{border:0;padding-top:0}
+.case-featured .featured-label{font-size:11px;letter-spacing:.11em;color:var(--accent);margin-bottom:12px}
+.case-featured .case-heading h3{font-size:clamp(28px,3vw,38px)}
+.case-featured .message-gallery{gap:28px}
+#trabajos>.section-heading,#performance .section-heading{margin-bottom:56px}
+#performance{padding-block:88px}
+.mockup-figure{border:1px solid var(--ink)}
+.mockup-badge{display:block;padding:14px 18px;background:rgba(21,34,53,.96);color:#fff;font-size:14px;font-weight:700;line-height:1.5;text-align:left}
+.viewer-disclosure{margin:0;flex:0 0 auto;border-bottom:1px solid var(--line)}
+.viewer-disclosure[hidden]{display:none}
+.section-cta{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:22px;margin-top:40px;font-size:15px}
+.section-cta p{margin:0;color:var(--muted)}
+.section-cta a{font-weight:700;color:var(--accent);text-underline-offset:5px;padding-block:10px;flex-shrink:0}
+.dark .section-cta{border-color:#405065}.dark .section-cta a{color:#a9c5ff}
+#operaciones,#trayectoria{padding-block:44px}
+#operaciones .section-heading,#trayectoria .section-heading{margin-bottom:28px}
+#operaciones h2,#trayectoria h2{font-size:clamp(32px,3.1vw,44px)}
+#operaciones .closing{font-size:clamp(24px,2.4vw,32px)}
+.career-path{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding:0;margin:34px 0 28px}
+.career-path li{border-top:2px solid var(--line);position:relative;padding:22px 28px 0 0}
+.career-path li::before{content:'';position:absolute;top:-7px;left:0;width:12px;height:12px;background:var(--accent);border-radius:50%}
+.career-date{font-size:13px;color:var(--muted);margin-bottom:12px}
+.career-path h3{font-size:21px;font-weight:500;line-height:1.3;margin:0 0 12px}
+.career-path p{font-size:14px;color:var(--muted)}
+.career-path .career-company{font-weight:700;color:var(--ink);font-size:13px}
+.tool-context{border-top:1px solid var(--line);font-size:14px}
+.tool-context summary{padding:16px 0;cursor:pointer;color:var(--ink);font-weight:700}
+.tool-context dl{display:grid;grid-template-columns:1fr 1fr;gap:22px 36px;margin:14px 0 24px}
+.tool-context dt{font-weight:700}.tool-context dd{margin:6px 0 0;color:var(--muted)}
+summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.floating-contact{position:fixed;right:22px;bottom:76px;z-index:6;background:var(--ink);color:#fff;border:1px solid #fff;border-radius:28px;box-shadow:0 3px 16px #15223530;display:flex;align-items:center;gap:9px;padding:12px 20px;text-decoration:none;font-size:15px;font-weight:700;min-height:48px}
+.floating-contact:hover{background:var(--accent)}
+body.modal-open .floating-contact{visibility:hidden}
+footer{padding-bottom:100px}
+@media(max-width:850px){.career-path{grid-template-columns:1fr}.career-path li{border-top:0;border-left:2px solid var(--line);padding:0 0 26px 24px}.career-path li::before{left:-7px;top:4px}.career-path li:last-child{padding-bottom:0}.case-featured{padding:24px}.section-cta{align-items:flex-start}.section-cta a{flex-shrink:1}.hero-context{font-size:15px}}
+@media(max-width:560px){.case-featured{padding:20px 16px;margin-inline:-8px;margin-bottom:56px}.case-featured .message-gallery{gap:30px}#performance{padding-block:58px}#trabajos>.section-heading,#performance .section-heading{margin-bottom:34px}.section-cta{display:block}.section-cta a{display:inline-block;margin-top:8px}.mockup-badge{font-size:13px;padding:13px 14px}.tool-context dl{grid-template-columns:1fr}.floating-contact{right:16px;bottom:76px;padding:10px 16px}#operaciones,#trayectoria{padding-block:36px}.contact-links{gap:12px}.contact-links a{overflow-wrap:anywhere}}
+
+/* Requested contrast, semantic heading and mobile-contact adjustments. */
+.dark .section-cta p{color:#c0cada}
+#operaciones .entry-title{font-size:17px;font-weight:700;line-height:1.6;margin:0 0 6px}
+@media(max-width:560px){header{min-height:64px;padding-right:150px}.floating-contact{top:10px;bottom:auto;right:16px;min-height:44px;padding:8px 12px;font-size:13px}}
+
+/* Compact pain-point case, reusing the featured case and image viewer. */
+.pain-case-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px;align-items:start}
+.pain-case-copy{list-style:none;padding:0;margin:0;color:var(--muted);font-size:15px}
+.pain-case-copy li+li{margin-top:16px}
+.pain-case-copy strong{display:block;font-size:14px;color:var(--ink);margin-bottom:4px}
+.pain-case-copy p{margin:0}
+.pain-case .case-note{margin-bottom:24px}
+@media(max-width:850px){.pain-case-grid{grid-template-columns:1fr;gap:24px}}
+
+/* Keep footer copy clear of the unchanged fixed contact button. */
+@media(min-width:561px){footer>span:last-child{margin-right:160px}}
+/* Requested October content layout and image-control spacing. */
+#operaciones .stats{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.resource-grid+.resource-copy{margin-top:30px}
+.resource-grid .image-open img{height:auto}
+.image-open::after{top:12px;right:12px;bottom:auto}
+.image-open.brand-home::after{top:auto;bottom:12px}
+.resource-grid .image-open{max-width:360px;margin-inline:auto;padding-top:48px;background:var(--paper)}
+@media(max-width:560px){.resource-grid{grid-template-columns:1fr}}
+header .header-cv{margin-left:auto;font-size:13px;color:var(--muted);text-underline-offset:4px;padding:8px 0}
+@media(max-width:560px){header{flex-wrap:wrap;row-gap:4px}header .header-cv{font-size:12px}}
