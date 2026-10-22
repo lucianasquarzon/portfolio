@@ -16,10 +16,10 @@
 
 
 
-#operaciones,#trayectoria{padding-block:44px}
-#operaciones .section-heading,#trayectoria .section-heading{margin-bottom:28px}
-#operaciones h2,#trayectoria h2{font-size:clamp(32px,3.1vw,44px)}
-#operaciones .closing{font-size:clamp(24px,2.4vw,32px)}
+#trayectoria{padding-block:44px}
+#trayectoria .section-heading{margin-bottom:28px}
+#trayectoria h2{font-size:clamp(32px,3.1vw,44px)}
+
 .career-path{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding:0;margin:34px 0 28px}
 .career-path li{border-top:2px solid var(--line);position:relative;padding:22px 28px 0 0}
 .career-path li::before{content:'';position:absolute;top:-7px;left:0;width:12px;height:12px;background:var(--accent);border-radius:50%}
@@ -37,11 +37,11 @@ summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 
 
 @media(max-width:850px){.career-path{grid-template-columns:1fr}.career-path li{border-top:0;border-left:2px solid var(--line);padding:0 0 26px 24px}.career-path li::before{left:-7px;top:4px}.career-path li:last-child{padding-bottom:0}.case-featured{padding:24px}.hero-context{font-size:15px}}
-@media(max-width:560px){.case-featured{padding:20px 16px;margin-inline:-8px;margin-bottom:56px}.case-featured .message-gallery{gap:30px}#performance{padding-block:58px}#trabajos>.section-heading,#performance .section-heading{margin-bottom:34px}.mockup-badge{font-size:13px;padding:13px 14px}.tool-context dl{grid-template-columns:1fr}#operaciones,#trayectoria{padding-block:36px}.contact-links{gap:12px}.contact-links a{overflow-wrap:anywhere}}
+@media(max-width:560px){.case-featured{padding:20px 16px;margin-inline:-8px;margin-bottom:56px}.case-featured .message-gallery{gap:30px}#performance{padding-block:58px}#trabajos>.section-heading,#performance .section-heading{margin-bottom:34px}.mockup-badge{font-size:13px;padding:13px 14px}.tool-context dl{grid-template-columns:1fr}#trayectoria{padding-block:36px}.contact-links{gap:12px}.contact-links a{overflow-wrap:anywhere}}
 
 
 
-#operaciones .entry-title{font-size:17px;font-weight:700;line-height:1.6;margin:0 0 6px}
+#contacto .entry-title{font-size:17px;font-weight:700;line-height:1.6;margin:0 0 6px}
 @media(max-width:560px){header{min-height:64px}}
 
 /* Compact pain-point case, reusing the featured case and image viewer. */
@@ -56,7 +56,7 @@ summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 
 
 /* Requested October content layout and image-control spacing. */
-#operaciones .stats{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+
 .resource-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
 .resource-grid+.resource-copy{margin-top:30px}
 .resource-grid .image-open img{height:auto}
@@ -66,3 +66,5 @@ summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 @media(max-width:560px){.resource-grid{grid-template-columns:1fr}}
 header .header-cv{margin-left:auto;font-size:13px;color:var(--muted);text-underline-offset:4px;padding:8px 0}
 @media(max-width:560px){header{flex-wrap:wrap;row-gap:4px}header .header-cv{font-size:12px}}
+
+#contacto .entry p{font-size:16px}

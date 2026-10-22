@@ -30,7 +30,7 @@ dialog[open]{display:flex;flex-direction:column;overflow:hidden}
 .analysis-details>summary:focus-visible{outline:2px solid #a9c5ff;outline-offset:5px}
 .analysis-sample{margin-top:16px;border-bottom:0;padding:24px 0 0}
 .analysis-sample h3{font-size:clamp(24px,2.5vw,32px)}
-.paid-operations>h3{font-size:24px;font-weight:500;margin:0 0 24px}
+
 .experience-context{font-size:14px;color:var(--muted);margin:20px 0}
 .employer+.employer{margin-top:36px}
 .employer-heading h3{font-size:28px;line-height:1.2;font-weight:500;margin:0 0 12px}
@@ -255,7 +255,7 @@ dialog.video-mode #zoom{
   }
 
   .hero-index{
-    grid-template-columns:repeat(4,minmax(0,1fr));
+    grid-template-columns:repeat(3,minmax(0,1fr));
     order:-1;
     width:100%;
     margin:2px 0 4px;
@@ -316,13 +316,9 @@ header nav{
     margin-top:14px;
   }
 
-  #operaciones{
-    padding-bottom:28px;
-  }
 
-  #operaciones .chain{
-    margin-bottom:0;
-  }
+
+
 
   #trayectoria{
     margin-top:0;
@@ -331,13 +327,9 @@ header nav{
 }
 
 @media(max-width:850px){
-  #operaciones{
-    padding-bottom:20px;
-  }
 
-  #operaciones .chain{
-    margin-bottom:0;
-  }
+
+
 
   #trayectoria{
     margin-top:0;
