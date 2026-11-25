@@ -70,8 +70,8 @@ header .header-cv{margin-left:auto;font-size:13px;color:var(--muted);text-underl
 #contacto .entry p{font-size:16px}
 
 /* Galería IA: proporción original y etiqueta fuera de la foto. */
-.ia-set+.ia-set{margin-top:36px}
-.ia-set-title{font-size:17px;font-weight:700;line-height:1.5;margin:0 0 16px}
+.ia-set+.ia-set{margin-top:32px}
+.ia-set-title{font-size:15px;font-weight:500;margin:0 0 16px;color:var(--muted)}
 .ia-gallery{grid-template-columns:repeat(5,minmax(0,1fr));align-items:start}
 .ia-gallery figure{position:relative;padding-bottom:24px;scroll-snap-align:start}
 .ia-gallery .image-open img{width:100%;height:auto}
